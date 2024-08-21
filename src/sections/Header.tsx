@@ -31,7 +31,7 @@ export const Header = () => {
               <a href="/about" className="text-xl font-bold text-black/70 hover:text-black transition">
                 Über uns
               </a>
-              <a href="#" className="text-xl font-bold text-black/70 hover:text-black transition">
+              <a href="/product" className="text-xl font-bold text-black/70 hover:text-black transition">
                 Produkte
               </a>
             </nav>
