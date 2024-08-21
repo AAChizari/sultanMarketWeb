@@ -20,7 +20,7 @@ export const LogoTicker = () => {
               transition={{
                 repeat: Infinity,
                 ease: "linear",
-                duration: 30,
+                duration: 10,
               }}
               className="flex flex-none gap-14 pr-14 -translate-x-1/2"
             >
