@@ -27,17 +27,6 @@ export const Header = () => {
               />
             </div>
           </div>
-<<<<<<< Updated upstream
-          <div className="hidden md:block">
-            <nav className="flex gap-8 text-sm">
-              <a href="/" className="text-xl font-bold text-black/70 hover:text-black transition">
-                Startseite
-              </a>
-              <a href="/about" className="text-xl font-bold text-black/70 hover:text-black transition">
-                Über uns
-              </a>
-              <a href="/product" className="text-xl font-bold text-black/70 hover:text-black transition">
-=======
 
           <div className="md:block hidden flex-grow">
             <nav className="flex justify-center gap-8 text-sm">
@@ -57,9 +46,8 @@ export const Header = () => {
                 href="/product"
                 className="text-xl font-bold text-black/70 hover:text-black transition"
               >
->>>>>>> Stashed changes
-                Produkte
-              </a>
+                Produkt
+              </Link>
             </nav>
           </div>
           <div className="md:hidden">
