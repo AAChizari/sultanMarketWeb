@@ -2,7 +2,8 @@ import Image from "next/image";
 import ImageSultan from "@/assets/ImageSultan.png";
 import XSocial from "@/assets/social-x.svg";
 import InstaSocial from "@/assets/social-instagram.svg";
-import YTSocial from "@/assets/social-youtube.svg";
+import FacebookIcon from "@/assets/social-facebook.svg";
+
 
 export const Footer = () => {
   return (
@@ -19,44 +20,20 @@ export const Footer = () => {
                 className="object-cover"
               />
             </div>
-            <div className="font-medium text-black">AI Start Landing Page</div>
+            <div className="font-medium text-black">Sultan Market</div>
           </div>
           <nav className="flex flex-col lg:flex-row lg:gap-7 gap-5 lg:flex-1 lg:justify-center">
             <a
               href="#"
-              className="text-black/70 hover:text-black text-xs md:text-sm transition"
+              className="text-black/70 font-bold hover:text-black text-lg md:text-lg transition"
             >
-              Features
-            </a>
-            <a
-              href="#"
-              className="text-black/70 hover:text-black text-xs md:text-sm transition"
-            >
-              Devs
-            </a>
-            <a
-              href="#"
-              className="text-black/70 hover:text-black text-xs md:text-sm transition"
-            >
-              Company
-            </a>
-            <a
-              href="#"
-              className="text-black/70 hover:text-black text-xs md:text-sm transition"
-            >
-              Blog
-            </a>
-            <a
-              href="#"
-              className="text-black/70 hover:text-black text-xs md:text-sm transition"
-            >
-              Changelog
+              AA&AF Chizari
             </a>
           </nav>
           <div className="flex gap-5 lg:flex-1 lg:justify-end">
-            <XSocial className="text-black/70 hover:text-black transition" />
-            <InstaSocial className="text-black/70 hover:text-black transition" />
-            <YTSocial className="text-black/70 hover:text-black transition" />
+            <a href="https://www.facebook.com/sultanmarktberlin/?locale=de_DE" className="text-black/70 hover:text-black transition">
+              <FacebookIcon width={40} height={40} />
+            </a>
           </div>
         </div>
       </div>
