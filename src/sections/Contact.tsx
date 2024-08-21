@@ -20,7 +20,7 @@ export const Contact = () => {
                 <Image
                   src={SMF}
                   alt="Sultan Market Front"
-                  className="rounded-lg shadow-lg mb-4"
+                  className="rounded-lg shadow-lg mb-4 "
                 />
                 <Image
                   src={SMF2}
@@ -33,6 +33,12 @@ export const Contact = () => {
                   Besuchen Sie uns
                 </h3>
                 <p className="mb-4">Wilhelmstraße 163, Berlin 13585</p>
+                <h3 className="text-2xl font-semibold mb-4">Öffnungszeiten:</h3>
+                <p className="mb-4">
+                  Montag - Samstag: 9:00 - 21:00 Uhr
+                  <br />
+                  Sonntag: Geschlossen
+                </p>
                 <h3 className="text-2xl font-semibold mb-4">
                   Kontakt Information
                 </h3>
