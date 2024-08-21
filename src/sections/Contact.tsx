@@ -2,70 +2,52 @@ import { FrameEffect } from "@/components/FrameEffect";
 import Image from "next/image";
 import SMF from "@/assets/SultanMFront.jpeg";
 import SultanMarketMaps from "@/assets/SultanMarketMaps.png";
+import SMF2 from "@/assets/SultanMFront2.jpg";
 
 export const Contact = () => {
   return (
-    <section className="py-4 md:py-5 bg-white">
-      <div className="container mx-auto px-4 sm:px-6 md:px-8 max-w-full">
-        <div className="relative h-96 w-full rounded-lg overflow-hidden">
-          <Image
-            src={SMF}
-            alt="Vorderansicht von Sultan Market"
-            fill
-            style={{
-              objectFit: "cover",
-              objectPosition: "center 10%"
-            }}
-            className="scale-110 rounded-lg"
-          />
+    <section className="py-16">
+      <div className="container mx-auto px-1">
+        <div className="flex justify-center items-center">
+          <h2 className="text-4xl md:text-6xl font-serif font-bold mb-4">
+            Kontakt & Adresse
+          </h2>
         </div>
-
-        <h2 className="mt-12 text-black font-serif font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-center tracking-tighter">
-          Besuchen Sie uns
-        </h2>
-        <p className="text-black/70 text-lg sm:text-xl md:text-2xl text-center mt-5 tracking-tight max-w-2xl mx-auto">
-          Entdecken Sie die Aromen des Orients in unserem gemütlichen Laden
-        </p>
-        <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 mt-16">
-          <div className="flex justify-center">
-            <FrameEffect>
-              <div className="p-4 sm:p-6 md:p-8">
-                <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 text-black text-center">
-                  Öffnungszeiten
-                </h3>
-                <ul className="space-y-0.5 text-black/70 text-sm sm:text-base">
-                  {['Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag'].map((day) => (
-                    <li key={day} className="flex justify-between items-center">
-                      <span className="w-24">{day}</span>
-                      <span className="ml-4">09:00–21:00</span>
-                    </li>
-                  ))}
-                  <li className="flex justify-between items-center mt-2">
-                    <span className="w-24">Sonntag</span>
-                    <span className="ml-4">Geschlossen</span>
-                  </li>
-                </ul>
+        <FrameEffect>
+          <div className="flex flex-col h-full w-full text-black p-4">
+            <div className="flex flex-wrap -mx-4">
+              <div className="w-full md:w-1/2 p-3 mb-8 md:mb-0 flex flex-col">
+                <Image
+                  src={SMF}
+                  alt="Sultan Market Front"
+                  className="rounded-lg shadow-lg mb-4"
+                />
+                <Image
+                  src={SMF2}
+                  alt="Sultan Market Front"
+                  className="rounded-lg shadow-lg"
+                />
               </div>
-            </FrameEffect>
-          </div>
-
-          <FrameEffect>
-            <div className="rounded-lg p-1.5 h-full flex flex-col">
-              <div className="relative flex-grow" style={{ minHeight: '300px' }}>
+              <div className="w-full md:w-1/2 px-4 md:border-l md:border-gray-300">
+                <h3 className="text-2xl font-semibold mb-4">
+                  Besuchen Sie uns
+                </h3>
+                <p className="mb-4">Wilhelmstraße 163, Berlin 13585</p>
+                <h3 className="text-2xl font-semibold mb-4">
+                  Kontakt Information
+                </h3>
+                <p className="mb-2">Telefonnr.: 0163 3232589</p>
+                <p className="mb-4">Email: info@sultan-afka.de</p>
                 <Image
                   src={SultanMarketMaps}
-                  alt="Karte mit Standort von Sultan Market"
-                  fill
-                  style={{ objectFit: "cover" }}
-                  className="rounded-lg"
+                  alt="Sultan Market Location"
+                  className="rounded-lg shadow-lg"
                 />
               </div>
             </div>
-          </FrameEffect>
-        </div>
+          </div>
+        </FrameEffect>
       </div>
     </section>
   );
 };
-
-export default Contact;
