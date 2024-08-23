@@ -3,6 +3,7 @@ import ImageSultan from "@/assets/ImageSultan.png";
 import XSocial from "@/assets/social-x.svg";
 import InstaSocial from "@/assets/social-instagram.svg";
 import FacebookIcon from "@/assets/social-facebook.svg";
+import Link from "next/link";
 
 
 export const Footer = () => {
@@ -23,12 +24,12 @@ export const Footer = () => {
             <div className="font-medium text-black">Sultan Market</div>
           </div>
           <nav className="flex flex-col lg:flex-row lg:gap-7 gap-5 lg:flex-1 lg:justify-center">
-            <a
-              href="#"
+            <Link
+              href="https://aachizari.github.io/aacPortfolio/"
               className="text-black/70 font-bold hover:text-black text-lg md:text-lg transition"
             >
               AA&AF Chizari
-            </a>
+            </Link>
           </nav>
           <div className="flex gap-5 lg:flex-1 lg:justify-end">
             <a href="https://www.facebook.com/sultanmarktberlin/?locale=de_DE" className="text-black/70 hover:text-black transition">
