@@ -21,7 +21,7 @@ export const LogoTicker = () => {
               animate={{ translateX: "0" }}
               transition={{
                 repeat: Infinity,
-                duration: 10,
+                duration: 20,
                 ease: "linear",
               }}
               className="flex flex-none gap-14  pr-14 -translate-y-1/2"
